@@ -82,8 +82,8 @@
 
   function onDocumentMouseMove(event) {
 
-    mouseX = (event.clientX - windowHalfX) * 0.02
-    mouseY = (event.clientY - windowHalfY) * 0.02
+    mouseX = (event.clientX - windowHalfX) * 0.01
+    mouseY = (event.clientY - windowHalfY) * 0.01
 
   }
 
@@ -151,6 +151,7 @@
       bevelSegments:bevelSegments,
       bevelEnabled:bevelEnabled
     })
+    textGeo1.center()
 
     textGeo2 = new THREE.TextGeometry('決意', {
       font: font,
@@ -163,6 +164,7 @@
       bevelSegments: bevelSegments,
       bevelEnabled: bevelEnabled
     })
+    textGeo2.center()
 
     textGeo3 = new THREE.TextGeometry('愛', {
       font: font,
@@ -175,6 +177,7 @@
       bevelSegments: bevelSegments,
       bevelEnabled: bevelEnabled
     })
+    textGeo3.center()
 
     var text1 = new THREE.Mesh(textGeo1, material)
     var text2 = new THREE.Mesh(textGeo2, material)
@@ -182,9 +185,9 @@
 
     // Position text1 on screen
 
-    text1.position.x = 1
-    text1.position.y = 1
-    text1.position.z = 1
+    text1.position.x = 10
+    text1.position.y = 2
+    text1.position.z = 20
 
     // Initial text1 rotation
 
@@ -195,20 +198,20 @@
     // Position text2 on screen
 
     text2.position.x = -15
-    text2.position.y = -35
-    text2.position.z = -100
+    text2.position.y = 25
+    text2.position.z = -40
 
     // Initial text2 rotation
 
-    text2.rotation.x = 0
-    text2.rotation.y = 0
+    text2.rotation.x = -0.4
+    text2.rotation.y = -0.4
     text2.rotation.z = 0
 
     // Position text3 on screen
 
-    text3.position.x = 30
-    text3.position.y = -25
-    text3.position.z = -20
+    text3.position.x = 45
+    text3.position.y = -20
+    text3.position.z = -10
 
     // Initial text3 rotation
 
